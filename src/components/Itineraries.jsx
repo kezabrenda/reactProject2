@@ -1,12 +1,12 @@
 import Itinerary from "./Itinerary";
 
-const Itineraries = ({ itineraries, onDelete }) => {
+const Itineraries = ({ itineraries, onDelete, onToggle }) => {
 
     return (
-        <div className="ml-28">
+        <div>
             {itineraries.map((itinerary) => (
                 <Itinerary key={itinerary.id} itinerary={itinerary} 
-                onDelete={onDelete} />
+                onDelete={onDelete} onToggle={onToggle} />
             ))}
         </div>
     )
