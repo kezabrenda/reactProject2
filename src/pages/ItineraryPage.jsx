@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Header from "../components/Header";
 import Itineraries from "../components/Itineraries";
 import AddItinerary from "../components/AddItinerary";
@@ -33,6 +33,11 @@ const ItineraryPage = () => {
     },
     ]);
   
+
+    ///
+    //export const ItineraryPageContext = React.createContext(); 
+
+
     const addItinerary = (itinerary) => {
       const id = Math.floor(Math.random() * 10000) + 1;
       const newItinerary = {id, ...itinerary}
